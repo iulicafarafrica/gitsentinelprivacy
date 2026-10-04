@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitSentinel — Privacy Policy</title>
+<style>
+body{font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;max-width:820px;margin:40px auto;padding:0 20px;color:#222}
+h1{font-size:1.9em}h2{font-size:1.25em;margin-top:2em}li{margin:.4em 0}
+code{background:#f4f4f4;padding:.1em .35em;border-radius:4px;font-size:.92em}
+.box{border:1px solid #ddd;border-left:4px solid #1f6feb;border-radius:6px;padding:12px 16px;background:#fafbff}
+</style>
+</head>
+<body>
+<h1>GitSentinel — Privacy Policy</h1>
+<p><strong>Last updated:</strong> October 4, 2026</p>
+<p>GitSentinel ("the extension") scans GitHub content you can already see for exposed secrets (API keys, tokens, credentials). <strong>All analysis happens locally in your browser. There are no accounts, no servers, no analytics and no tracking.</strong></p>
+
+<h2>1. What Data We Collect</h2>
+<ul>
+<li><strong>Scan findings</strong> — secret type, file, line and <strong>masked</strong> value. Raw secret values are never written to storage.</li>
+<li><strong>Your triage decisions</strong> — ignored items, accepted-risk baseline, tracked repositories.</li>
+<li><strong>Settings &amp; scan cache</strong> — detection preferences, tree ETAGs, last scan state.</li>
+<li><strong>GitHub Personal Access Token (optional)</strong> — only if you provide one. Stored locally in plaintext and sent solely to <code>api.github.com</code> to authenticate your own API requests.</li>
+</ul>
+
+<h2>2. What We Never Do</h2>
+<div class="box">
+<ul>
+<li>Raw secret values are <strong>never</strong> written to storage, shown in notifications, or transmitted anywhere.</li>
+<li>Saved data is <strong>never</strong> sold, shared with, or transmitted to any third party.</li>
+</ul>
+</div>
+
+<h2>3. Third-Party Requests</h2>
+<p>The extension contacts only GitHub, and only content you already have access to:</p>
+<ul>
+<li><code>github.com</code> — reading visited repo pages for local scanning.</li>
+<li><code>api.github.com</code> — repository trees, PR diffs, job logs and release metadata. Authenticated only with your own optional PAT.</li>
+<li><code>raw.githubusercontent.com</code> — raw file contents for scanning (CDN, no API quota).</li>
+</ul>
+<p>These requests are subject to GitHub's Privacy Policy. GitHub is a registered trademark of GitHub, Inc.; this extension is not affiliated with or endorsed by GitHub, Inc.</p>
+
+<h2>4. Data Retention and Deletion</h2>
+<p>Data stays on your device until you delete it: per-item ignore/baseline, per-repo data, full wipe from Settings, or uninstalling the extension (which removes everything).</p>
+
+<h2>5. Changes to This Policy</h2>
+<p>If this policy changes, the updated version will be posted at this URL with a new "Last updated" date.</p>
+
+<h2>6. Contact</h2>
+<p>For privacy questions, contact the developer through the Chrome Web Store listing page.</p>
+</body>
+</html>
